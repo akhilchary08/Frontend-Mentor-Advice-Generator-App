@@ -13,6 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,12 +22,12 @@
 <body>
   <div class="container">
     <div class="main">
-      <p class="heading">ADVICE #117</p>
+      <p id="heading">ADVICE #117</p>
       <p class="advice-text">"It is easy to sit up and take
         notice, what's difficult is getting
         up and taking action."</p>
       <img src="/images/pattern-divider-desktop.svg" class="divider" alt="" srcset="">
-      <div class="btn">
+      <div class="btn" onclick="getQuote()">
         <img src="/images/icon-dice.svg" alt="" srcset="">
       </div>
     </div>
@@ -39,4 +40,6 @@
     Coded by <a href="#">Hashira</a>.
   </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
 </html>
